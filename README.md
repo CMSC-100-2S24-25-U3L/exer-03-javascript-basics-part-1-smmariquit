@@ -1,1 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ZdbdKFSR)
+# CMSC 100 Exer 3 - JavaScript
+## Simonee Ezekiel M. Mariquit - CMSC 100 U3L
+## S/N: 2023-16061
+
+This program, for the purposes of demonstrating understanding of JS basics, has three main functionalities:
+- It can check if two passwords (strings) match and has at least 8 characters, has at least 1 numbeer, 1 uppercase character, and 1 lowercase character.
+- A function that reverse a functions
+- A function for storing the password to the object
+
+My key takeaways for this exercise is that it pays off to practice DSA.
