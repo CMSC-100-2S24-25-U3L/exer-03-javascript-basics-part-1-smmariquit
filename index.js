@@ -55,7 +55,7 @@ function validate(pass1, pass2){
     }
     
     // If all flags end up to be true, the passwords are valid.
-    return (hasLowercase && hasUppercase && hasSpecialChar)
+    return (hasLowercase && hasUppercase && hasNumber)
 }
 
 // Test case for String reversal
@@ -79,6 +79,20 @@ function reverse(str) {
     return restOfString + firstChar;
 }
 
+function storePassword(username, pass1, pass2){
+    let object = {
+        name: username
+    }
+
+    if(validate(pass1, pass2)){
+        object.newpassword = reverse(pass1);
+    } else {
+        object.newpassword = pass1;
+    }
+
+    return object
+}
+
 // Test case for string reversal
 reversed = reverse(reversal);
 console.log("Reversed String: " + reversed);
@@ -90,4 +104,7 @@ console.log(validate(password3, password3));
 console.log(validate(password4, password4));
 console.log(validate(password5, password5));
 console.log(validate(password1, password6));
+
+console.log(storePassword("John", "Pass1234", "Pass1234"));
+console.log(storePassword("John", "Pass123", "Pass12345"));
 
